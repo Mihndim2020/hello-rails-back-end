@@ -17977,3 +17977,804 @@ Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 1.2ms | Allocations: 1033)
   [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
   [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2021-10-15 17:34:12 -0400
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 401)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.9ms | Allocations: 5880)
+Completed 200 OK in 102ms (Views: 75.5ms | ActiveRecord: 0.0ms | Allocations: 9046)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:34:12 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (2.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 52ms (Views: 0.9ms | ActiveRecord: 30.0ms | Allocations: 5927)
+
+
+Started GET "/" for ::1 at 2021-10-15 17:34:18 -0400
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 3026)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 3480)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:34:18 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 7ms (Views: 1.4ms | ActiveRecord: 1.2ms | Allocations: 1049)
+
+
+Started GET "/" for ::1 at 2021-10-15 17:34:20 -0400
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 3026)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 3474)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:34:21 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 1.5ms | Allocations: 1045)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:34:53 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 1.2ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:34:56 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (2.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 9ms (Views: 0.6ms | ActiveRecord: 2.4ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:35:27 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 11ms (Views: 0.8ms | ActiveRecord: 1.3ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:35:34 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 1.5ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:36:28 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 1.2ms | Allocations: 997)
+
+
+Started GET "/" for ::1 at 2021-10-15 17:40:20 -0400
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 3024)
+Completed 200 OK in 42ms (Views: 35.4ms | ActiveRecord: 0.0ms | Allocations: 3471)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:40:21 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 9ms (Views: 1.3ms | ActiveRecord: 1.2ms | Allocations: 1032)
+
+
+Started GET "/" for ::1 at 2021-10-15 17:40:25 -0400
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 3026)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 3474)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:40:25 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 1032)
+
+
+Started GET "/" for ::1 at 2021-10-15 17:40:28 -0400
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3024)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 3471)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:40:29 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.2ms | Allocations: 1032)
+
+
+Started GET "/" for ::1 at 2021-10-15 17:40:31 -0400
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3024)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 3471)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:40:31 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 1.7ms | Allocations: 1032)
+
+
+Started GET "/" for ::1 at 2021-10-15 17:40:34 -0400
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3036)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 3485)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:40:34 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 1.2ms | Allocations: 1032)
+
+
+Started GET "/" for ::1 at 2021-10-15 17:40:36 -0400
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 3024)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 3471)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:40:36 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 1.2ms | Allocations: 1032)
+
+
+Started GET "/" for ::1 at 2021-10-15 17:40:39 -0400
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 3034)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 3482)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:40:39 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 21ms (Views: 0.5ms | ActiveRecord: 1.8ms | Allocations: 1035)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:40:45 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 1.6ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for 127.0.0.1 at 2021-10-15 17:49:20 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (2.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 84ms (Views: 0.9ms | ActiveRecord: 57.9ms | Allocations: 4114)
+
+
+Started GET "/" for ::1 at 2021-10-15 17:52:40 -0400
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 401)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.2ms | Allocations: 5881)
+Completed 200 OK in 56ms (Views: 38.7ms | ActiveRecord: 0.0ms | Allocations: 9047)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:52:41 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 41ms (Views: 0.9ms | ActiveRecord: 21.4ms | Allocations: 5926)
+
+
+Started GET "/" for ::1 at 2021-10-15 17:52:43 -0400
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3026)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 3476)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:52:44 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 8ms (Views: 0.8ms | ActiveRecord: 1.4ms | Allocations: 1049)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:57:37 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (8.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 39ms (Views: 3.6ms | ActiveRecord: 8.9ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:58:20 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (2.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 10ms (Views: 0.9ms | ActiveRecord: 2.2ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:58:24 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 9ms (Views: 1.3ms | ActiveRecord: 1.4ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 17:58:34 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 1.9ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:06:58 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (2.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 57ms (Views: 0.6ms | ActiveRecord: 34.0ms | Allocations: 4089)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:07:06 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 1.3ms | Allocations: 996)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:07:18 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 1.3ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:07:28 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (2.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 2.1ms | Allocations: 980)
+
+
+Started GET "/" for ::1 at 2021-10-15 18:07:35 -0400
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 3026)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.0ms | Allocations: 3474)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:07:36 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 15ms (Views: 0.7ms | ActiveRecord: 1.5ms | Allocations: 1032)
+
+
+Started GET "/" for ::1 at 2021-10-15 18:07:39 -0400
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 3024)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.0ms | Allocations: 3471)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:07:39 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 1.4ms | Allocations: 1032)
+
+
+Started GET "/" for ::1 at 2021-10-15 18:07:41 -0400
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 3024)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 3471)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:07:41 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 1.2ms | Allocations: 1032)
+
+
+Started GET "/" for ::1 at 2021-10-15 18:07:43 -0400
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3026)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 3474)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:07:43 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 11ms (Views: 0.6ms | ActiveRecord: 1.7ms | Allocations: 1032)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:25:31 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (2.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 97ms (Views: 1.3ms | ActiveRecord: 43.1ms | Allocations: 6836)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:32:52 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (5.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 46ms (Views: 0.9ms | ActiveRecord: 31.2ms | Allocations: 4071)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:34:43 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 1.1ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:34:47 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 1.3ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:34:49 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.9ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:34:52 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 1.2ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:35:02 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 1.3ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:35:07 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 1.2ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:37:09 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (8.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 46ms (Views: 0.5ms | ActiveRecord: 8.1ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:37:55 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:37:58 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 1.6ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:38:00 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 9ms (Views: 0.6ms | ActiveRecord: 1.4ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:45:42 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (2.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 85ms (Views: 0.4ms | ActiveRecord: 54.9ms | Allocations: 4072)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:45:48 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (2.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 2.8ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:46:35 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (2.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 2.3ms | Allocations: 980)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:46:47 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 1.5ms | Allocations: 980)
+
+
+Started GET "/" for ::1 at 2021-10-15 18:50:23 -0400
+  [1m[35m (6.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 401)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 83.3ms | Allocations: 5885)
+Completed 200 OK in 108ms (Views: 89.4ms | ActiveRecord: 0.0ms | Allocations: 9051)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:50:24 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (3.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 110ms (Views: 0.8ms | ActiveRecord: 80.2ms | Allocations: 5932)
+
+
+Started GET "/" for ::1 at 2021-10-15 18:50:28 -0400
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3030)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 3480)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:50:29 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.0ms | Allocations: 1052)
+
+
+Started GET "/" for ::1 at 2021-10-15 18:50:31 -0400
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3030)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 3482)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:50:31 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 1.3ms | Allocations: 1035)
+
+
+Started GET "/" for ::1 at 2021-10-15 18:50:42 -0400
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 3030)
+Completed 200 OK in 31ms (Views: 30.5ms | ActiveRecord: 0.0ms | Allocations: 3481)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:50:42 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 1.3ms | Allocations: 1048)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:50:59 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (3.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 3.2ms | Allocations: 996)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:51:13 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 1.6ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:51:28 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (8.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 8.4ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:52:58 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (2.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 2.5ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:53:05 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 1.7ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:53:40 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 12ms (Views: 0.9ms | ActiveRecord: 1.2ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:53:43 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 1.2ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:54:01 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (4.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 20ms (Views: 0.6ms | ActiveRecord: 4.6ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:54:04 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 1.9ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:54:15 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 1.5ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:54:18 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.8ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:54:21 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 1.0ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:54:28 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 1.7ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:55:15 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 11ms (Views: 4.5ms | ActiveRecord: 1.5ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:55:19 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 1.3ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:55:21 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 1.1ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:58:22 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.5ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:58:24 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (3.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 16ms (Views: 0.9ms | ActiveRecord: 3.7ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:58:26 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 7ms (Views: 0.9ms | ActiveRecord: 1.6ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:58:27 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 1.3ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:58:29 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (2.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 15ms (Views: 0.7ms | ActiveRecord: 2.0ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:58:32 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 1.6ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:58:34 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 1.1ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 18:58:37 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (2.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 2.1ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 19:06:34 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (8.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 237ms (Views: 0.5ms | ActiveRecord: 150.7ms | Allocations: 4126)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 19:06:36 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 1.4ms | Allocations: 983)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 19:06:39 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (2.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 2.9ms | Allocations: 983)
+
+
+Started GET "/" for ::1 at 2021-10-15 19:11:50 -0400
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.4ms | Allocations: 5778)
+Completed 200 OK in 54ms (Views: 38.4ms | ActiveRecord: 0.0ms | Allocations: 8944)
+
+
+Started GET "/" for ::1 at 2021-10-15 19:11:55 -0400
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 2979)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 3428)
+
+
+Started GET "/" for ::1 at 2021-10-15 19:11:59 -0400
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 2981)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 3434)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 19:12:07 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (2.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 50ms (Views: 0.7ms | ActiveRecord: 21.3ms | Allocations: 5880)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 19:12:10 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (1.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 1.7ms | Allocations: 996)
+
+
+Started GET "/v1/messages" for ::1 at 2021-10-15 19:12:13 -0400
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/v1/greetings_controller.rb:3:in `index'
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 0.9ms | Allocations: 1000)
+
+
