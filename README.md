@@ -27,7 +27,7 @@ To get a local copy up and running, follow these simple example steps.
 ### Prerequisites
 
 - A browser to open the main file
-- Ruby 3.0.1p64 or higher
+- Ruby 3.0.0 or higher
 - Node.js
 - NPM
 
@@ -36,10 +36,20 @@ To get a local copy up and running, follow these simple example steps.
 - Go to the terminal
 - Clone the project by entering this command: `git clone git@github.com:Mihndim2020/hello-react-front-end.git` for the react frontend
 - - Clone the project by entering this command: `git clone git@github.com:Mihndim2020/hello-rails-back-end.git` for the rails backend
-- to start the rails backend, `cd` in to "hello-rails-back-end" in the terminal, run bundle install to install dependences, the run ***rails s -p 3090***
-- run bundle install to install dependencies
+
+- to start the ***rails backend***;
+- `cd` in to "hello-rails-back-end" in the terminal, 
+- run bundle install to install dependences,
 - type `bin/rails db:setup` to setup your local database
-- run db:seed to seed the database and you are good to go. 
+- run `rails db:seed` to seed the database and you are good to go. -
+- the run ***rails s -p 3090*** to start the server on port 3090.
+
+- to start the ***react frontend*** 
+- `cd` in to "hello-react-front-end" in the terminal, 
+- run bundle install to install dependences,
+- run npm start, the react app should start at port 3000
+- go to the browser, type localhost:3000 in the address bar, you should see the app running, each time you refresh the page, your should see a new greeting message. Take note of the ***port numbers*** to avoid conflicts. 
+
 
 ### Usage
 
