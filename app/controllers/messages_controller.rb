@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # This the message controller
 class MessagesController < ApplicationController
   # GET /message

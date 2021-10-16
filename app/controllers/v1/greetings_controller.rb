@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Greetings controller
 module V1
   # Greetings controller
