@@ -1,9 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# "Hello world" project with rails-react gem
+# Set up a "Hello world" project with two apps
 
-> For this project I used react-rails gem to build React components as a part of your Rails JavaScript and serve it in a component, react_component, to be used in a regular ERB file.
-
+> For this project I have build the backend with Ruby on Rails and the frontend with React a JavaScript Library. I have created an API endpoint where the react frontend get data in json format and renders it.
 
 ## Built With
 
@@ -18,9 +17,7 @@
 - redux 4.1.1
 
 
-## Live Demo
-
-- Under development
+## [LINK TO THE FRONTEND](https://github.com/Mihndim2020/hello-react-front-end/tree/feature/react_front_end)
 
 
 ## Getting Started
@@ -37,8 +34,9 @@ To get a local copy up and running, follow these simple example steps.
 ### Setup
 
 - Go to the terminal
-- Clone the project by entering this command: `git clone git@github.com:Mihndim2020/Hello-Rails-React.git`
-- cd into Hello-Rails_React folder
+- Clone the project by entering this command: `git clone git@github.com:Mihndim2020/hello-react-front-end.git` for the react frontend
+- - Clone the project by entering this command: `git clone git@github.com:Mihndim2020/hello-rails-back-end.git` for the rails backend
+- to start the rails backend, `cd` in to "hello-rails-back-end" in the terminal, run bundle install to install dependences, the run ***rails s -p 3090***
 - run bundle install to install dependencies
 - type `bin/rails db:setup` to setup your local database
 - run db:seed to seed the database and you are good to go. 
