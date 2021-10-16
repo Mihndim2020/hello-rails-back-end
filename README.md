@@ -41,7 +41,8 @@ To get a local copy up and running, follow these simple example steps.
 - `cd` in to "hello-rails-back-end" in the terminal, 
 - run bundle install to install dependences,
 - type `bin/rails db:setup` to setup your local database
-- run `rails db:seed` to seed the database and you are good to go. -
+- run `rails db:seed` to seed the database and you are good to go. 
+- database ***username: mihndim***, and ***password: 1234567***
 - the run ***rails s -p 3090*** to start the server on port 3090.
 
 - to start the ***react frontend*** 
